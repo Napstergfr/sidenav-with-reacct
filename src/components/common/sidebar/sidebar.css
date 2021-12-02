@@ -8,10 +8,28 @@
     text-align: center;
     float: left;
 }
-.sidebar ul {
+/*This is sidebar wrapper*/
+
+.sidebar ul, .overflow-items ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.overflow-items ul li{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 17px;
+    background: #25293A;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.overflow-items ul li:hover{
+    background: #1E212E;
 }
 .sidebar ul li {
     padding: 17px 0;
@@ -38,8 +56,9 @@
     background: #25293A;
 }
 .active {
-    background: #1E212E;
+    background: #1E212E !important;
 }
+/* This is for active sidebar menu */
 .active i {
     color: #73BD83;
 }
@@ -52,4 +71,8 @@
     background: #1E212E;
     padding: 10px;
     border-radius: 4px;
+    box-shadow: 0px 1px 18px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 18px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 18px 0px rgba(0,0,0,0.75);
 }
+/* This is sidebar overflow wrapper */
