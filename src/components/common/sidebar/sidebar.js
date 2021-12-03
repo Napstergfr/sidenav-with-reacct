@@ -82,23 +82,23 @@ class Sidebar extends Component {
         if (viewHeight <= 500) { // This is to increase and decrease the sidebar items as well as overflow items according to screen size
             this.setState({
                 sideBarTopItems: SidebarTopItems.slice(0, 2),
-                sidBarOverflowItems: SidebarTopItems.slice(2, SidebarTopItems.length - 1)
+                sidBarOverflowItems: SidebarTopItems.slice(2, SidebarTopItems.length)
             });
 
         } else if (viewHeight <= 768) { // This is to increase and decrease the sidebar items as well as overflow items according to screen size
             this.setState({
                 sideBarTopItems: SidebarTopItems.slice(0, 3),
-                sidBarOverflowItems: SidebarTopItems.slice(3, SidebarTopItems.length - 1)
+                sidBarOverflowItems: SidebarTopItems.slice(3, SidebarTopItems.length)
             });
         } else if (viewHeight <= 979) { // This is to increase and decrease the sidebar items as well as overflow items according to screen size
             this.setState({
                 sideBarTopItems: SidebarTopItems.slice(0, 5),
-                sidBarOverflowItems: SidebarTopItems.slice(5, SidebarTopItems.length - 1)
+                sidBarOverflowItems: SidebarTopItems.slice(5, SidebarTopItems.length)
             });
         } else if (viewHeight >= 979) { // This is to increase and decrease the sidebar items as well as overflow items according to screen size
             this.setState({
                 sideBarTopItems: SidebarTopItems.slice(0, 7),
-                sidBarOverflowItems: SidebarTopItems.slice(7, SidebarTopItems.length - 1)
+                sidBarOverflowItems: SidebarTopItems.slice(7, SidebarTopItems.length)
             });
         } else {
             this.setState({ // This is to increase and decrease the sidebar items as well as overflow items according to screen size
