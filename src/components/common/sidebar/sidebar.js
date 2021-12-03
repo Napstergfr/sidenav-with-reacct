@@ -174,7 +174,7 @@ function RenderOverflowItems({items, filteredItems, showItems, onClickItems, onS
                 id="overflowItemsSearchBox"
                 ariaLabel="Filter actions by text"
                 placeholder="Filter actions"
-                onChange={(event) => onSearch(event.target.value, items)}
+                onChange={(event) => onSearch(event ? event.target.value : undefined, items)}
             />
             {filteredItems.length > 0 && filteredItems ? <ul>
                 {filteredItems.map((item) => {
