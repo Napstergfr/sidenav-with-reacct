@@ -90,6 +90,11 @@ class Sidebar extends Component {
                 sideBarTopItems: SidebarTopItems.slice(0, 3),
                 sidBarOverflowItems: SidebarTopItems.slice(3, SidebarTopItems.length)
             });
+        } else if (viewHeight <= 823) { // This is to increase and decrease the sidebar items as well as overflow items according to screen size
+            this.setState({
+                sideBarTopItems: SidebarTopItems.slice(0, 3),
+                sidBarOverflowItems: SidebarTopItems.slice(3, SidebarTopItems.length)
+            });
         } else if (viewHeight <= 979) { // This is to increase and decrease the sidebar items as well as overflow items according to screen size
             this.setState({
                 sideBarTopItems: SidebarTopItems.slice(0, 5),
